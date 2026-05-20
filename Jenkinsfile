@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Building') {
           steps {
-                sh 'apt install pip -y'
+                sh 'sudo apt install pip -y'
                 sh 'pip install -r requirements.txt'
           }
         }
